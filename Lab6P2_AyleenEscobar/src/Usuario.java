@@ -4,16 +4,20 @@ import java.util.Date;
 
 public class Usuario {
     //Nombre, correo, pais de residencia y fecha de nacimiento
-    private String nombre, correo, pais;
+    private String nombre, correo, pais,usuario, password;
+    private int saldo;
     private Date date;
 
     public Usuario() {
     }
 
-    public Usuario(String nombre, String correo, String pais, Date date) {
+    public Usuario(String nombre, String correo, String pais, String usuario, String password, int saldo, Date date) {
         this.nombre = nombre;
         this.correo = correo;
         this.pais = pais;
+        this.usuario = usuario;
+        this.password = password;
+        this.saldo = saldo;
         this.date = date;
     }
 
@@ -41,6 +45,30 @@ public class Usuario {
         this.pais = pais;
     }
 
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }
+
     public Date getDate() {
         return date;
     }
@@ -48,10 +76,10 @@ public class Usuario {
     public void setDate(Date date) {
         this.date = date;
     }
-
+    
     @Override
     public String toString() {
-        return nombre;
+        return usuario;
     }
      
 }
