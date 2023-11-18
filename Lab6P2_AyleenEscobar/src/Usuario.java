@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Date;
 
 
@@ -7,6 +8,7 @@ public class Usuario {
     private String nombre, correo, pais,usuario, password;
     private int saldo;
     private Date date;
+    private ArrayList<Carro> Carros;
 
     public Usuario() {
     }
@@ -75,6 +77,14 @@ public class Usuario {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public ArrayList<Carro> getCarros() {
+        return Carros;
+    }
+
+    public void setCarros(ArrayList<Carro> Carros) {
+        this.Carros = Carros;
     }
     
     @Override
