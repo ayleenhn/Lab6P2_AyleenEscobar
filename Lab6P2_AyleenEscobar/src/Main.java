@@ -3,15 +3,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.JOptionPane;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 
-/**
- *
- * @author famil
- */
 public class Main extends javax.swing.JFrame {
 
     /**
@@ -19,9 +11,13 @@ public class Main extends javax.swing.JFrame {
      */
     public Main() {
         initComponents();
-        jL_Iniciar.setVisible(true);
+        jP_IniciarSesion.setVisible(false);
         jP_CrearCuenta.setVisible(false);
         jP_CrearUsuario.setVisible(false);
+        jL_Iniciar.setVisible(true);
+        jB_login.setVisible(true);
+        jB_crear.setVisible(true);
+        
     }
 
     /**
@@ -35,6 +31,8 @@ public class Main extends javax.swing.JFrame {
 
         jD_Menu = new javax.swing.JDialog();
         jPanel1 = new javax.swing.JPanel();
+        jP_IniciarSesion = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
         jP_CrearUsuario = new javax.swing.JPanel();
         jL_contra2 = new javax.swing.JLabel();
         jL_contra = new javax.swing.JLabel();
@@ -59,8 +57,8 @@ public class Main extends javax.swing.JFrame {
         jL_edad = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jP_Inicio = new javax.swing.JPanel();
-        jL_crear = new javax.swing.JLabel();
-        jL_bglogin = new javax.swing.JLabel();
+        jB_crear = new javax.swing.JButton();
+        jB_login = new javax.swing.JButton();
         jL_Iniciar = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 102));
@@ -88,12 +86,17 @@ public class Main extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(760, 470));
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
             }
         });
+
+        jP_IniciarSesion.setBackground(new java.awt.Color(0, 0, 0));
+        jP_IniciarSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/need-for-speed-2560x1440-mclaren.jpg"))); // NOI18N
+        jP_IniciarSesion.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jP_CrearUsuario.setBackground(new java.awt.Color(0, 0, 0));
         jP_CrearUsuario.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -173,11 +176,6 @@ public class Main extends javax.swing.JFrame {
         jP_CrearCuenta.add(jTF_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 206, -1));
 
         jTF_correo.setForeground(new java.awt.Color(0, 0, 0));
-        jTF_correo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTF_correoActionPerformed(evt);
-            }
-        });
         jP_CrearCuenta.add(jTF_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 206, -1));
 
         jTF_pais.setForeground(new java.awt.Color(0, 0, 0));
@@ -207,25 +205,23 @@ public class Main extends javax.swing.JFrame {
         jP_Inicio.setBackground(new java.awt.Color(0, 0, 0));
         jP_Inicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jL_crear.setFont(new java.awt.Font("Five Nights at Freddy's", 1, 40)); // NOI18N
-        jL_crear.setForeground(new java.awt.Color(255, 255, 255));
-        jL_crear.setText("Crear una cuenta");
-        jL_crear.addMouseListener(new java.awt.event.MouseAdapter() {
+        jB_crear.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jB_crear.setText("Crear una cuenta");
+        jB_crear.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jL_crearMouseClicked(evt);
+                jB_crearMouseClicked(evt);
             }
         });
-        jP_Inicio.add(jL_crear, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 250, -1));
+        jP_Inicio.add(jB_crear, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 220, 30));
 
-        jL_bglogin.setFont(new java.awt.Font("Five Nights at Freddy's", 1, 40)); // NOI18N
-        jL_bglogin.setForeground(new java.awt.Color(255, 255, 255));
-        jL_bglogin.setText("Iniciar sesion");
-        jL_bglogin.addMouseListener(new java.awt.event.MouseAdapter() {
+        jB_login.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jB_login.setText("Iniciar sesion");
+        jB_login.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jL_bgloginMouseClicked(evt);
+                jB_loginMouseClicked(evt);
             }
         });
-        jP_Inicio.add(jL_bglogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 210, -1));
+        jP_Inicio.add(jB_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 220, 30));
 
         jL_Iniciar.setFont(new java.awt.Font("Five Nights at Freddy's", 1, 40)); // NOI18N
         jL_Iniciar.setForeground(new java.awt.Color(255, 255, 255));
@@ -252,6 +248,11 @@ public class Main extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jP_Inicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_IniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,17 +272,15 @@ public class Main extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jP_Inicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_IniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 469, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jL_bgloginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_bgloginMouseClicked
-        // TODO add your handling code here:
-        jP_CrearUsuario.setVisible(false);
-        jP_CrearCuenta.setVisible(false);
-        jL_Iniciar.setVisible(false);
-    }//GEN-LAST:event_jL_bgloginMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -305,21 +304,11 @@ public class Main extends javax.swing.JFrame {
             
             jP_CrearCuenta.setVisible(false);
             jP_CrearUsuario.setVisible(true);
+            jP_IniciarSesion.setVisible(false);
             jL_contra.setVisible(false);
             jL_contra2.setVisible(false);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jTF_correoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTF_correoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTF_correoActionPerformed
-
-    private void jL_crearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_crearMouseClicked
-        // TODO add your handling code here:
-        jL_Iniciar.setVisible(false);
-        jL_edad.setVisible(false);
-        jP_CrearCuenta.setVisible(true);
-    }//GEN-LAST:event_jL_crearMouseClicked
 
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
         // TODO add your handling code here:
@@ -349,9 +338,31 @@ public class Main extends javax.swing.JFrame {
             jL_Iniciar.setVisible(true);
             jP_CrearCuenta.setVisible(false);
             jP_CrearUsuario.setVisible(false);
+            jP_IniciarSesion.setVisible(false);
         }
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jB_crearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jB_crearMouseClicked
+        // TODO add your handling code here:
+        jL_edad.setVisible(false);
+        jL_Iniciar.setVisible(false);
+        jP_IniciarSesion.setVisible(false);
+        jP_CrearUsuario.setVisible(false);
+        jP_CrearCuenta.setVisible(true);
+        jB_login.setVisible(false);
+        jB_crear.setVisible(false);
+    }//GEN-LAST:event_jB_crearMouseClicked
+
+    private void jB_loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jB_loginMouseClicked
+        // TODO add your handling code here:
+        jL_Iniciar.setVisible(false);
+        jP_CrearUsuario.setVisible(false);
+        jP_CrearCuenta.setVisible(false);
+        jP_IniciarSesion.setVisible(true);
+        jB_login.setVisible(false);
+        jB_crear.setVisible(false);
+    }//GEN-LAST:event_jB_loginMouseClicked
 
     /**
      * @param args the command line arguments
@@ -417,14 +428,14 @@ public class Main extends javax.swing.JFrame {
     private ArrayList<Usuario> usuarios= new ArrayList();
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jB_crear;
+    private javax.swing.JButton jB_login;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JDialog jD_Menu;
     private javax.swing.JLabel jL_Iniciar;
-    private javax.swing.JLabel jL_bglogin;
     private javax.swing.JLabel jL_contra;
     private javax.swing.JLabel jL_contra2;
-    private javax.swing.JLabel jL_crear;
     private javax.swing.JLabel jL_edad;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -435,10 +446,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPasswordField jPF_Password;
     private javax.swing.JPanel jP_CrearCuenta;
     private javax.swing.JPanel jP_CrearUsuario;
+    private javax.swing.JPanel jP_IniciarSesion;
     private javax.swing.JPanel jP_Inicio;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTF_correo;
