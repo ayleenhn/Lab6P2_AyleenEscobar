@@ -17,6 +17,8 @@ public class Main extends javax.swing.JFrame {
         jP_IniciarSesion.setVisible(false);
         jP_CrearCuenta.setVisible(false);
         jP_CrearUsuario.setVisible(false);
+        jP_Concesionaria.setVisible(false);
+        jP_Dentro.setVisible(false);
         jL_Iniciar.setVisible(true);
         jB_login.setVisible(true);
         jB_crear.setVisible(true);
@@ -47,25 +49,25 @@ public class Main extends javax.swing.JFrame {
 
         jD_Menu = new javax.swing.JDialog();
         jPanel1 = new javax.swing.JPanel();
-        jP_Dentro = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jP_Garage = new javax.swing.JPanel();
         jP_VentaCarros = new javax.swing.JPanel();
         jP_IniciarSesion = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jPF_PasswordInicio = new javax.swing.JPasswordField();
+        jTF_usuarioInicio = new javax.swing.JTextField();
+        jButton7 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jP_CrearUsuario = new javax.swing.JPanel();
-        jL_contra2 = new javax.swing.JLabel();
-        jL_contra = new javax.swing.JLabel();
-        jTF_usuario = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jPF_Password = new javax.swing.JPasswordField();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
+        jP_Concesionaria = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel12 = new javax.swing.JLabel();
+        jCB_Carros_pais = new javax.swing.JComboBox<>();
+        jLabel13 = new javax.swing.JLabel();
+        jP_Inicio = new javax.swing.JPanel();
+        jB_crear = new javax.swing.JButton();
+        jB_login = new javax.swing.JButton();
+        jL_Iniciar = new javax.swing.JLabel();
         jP_CrearCuenta = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -79,16 +81,21 @@ public class Main extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jL_edad = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jP_Inicio = new javax.swing.JPanel();
-        jB_crear = new javax.swing.JButton();
-        jB_login = new javax.swing.JButton();
-        jL_Iniciar = new javax.swing.JLabel();
-        jP_Concesionaria = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel12 = new javax.swing.JLabel();
-        jCB_Carros_pais = new javax.swing.JComboBox<>();
-        jLabel13 = new javax.swing.JLabel();
+        jP_CrearUsuario = new javax.swing.JPanel();
+        jL_contra2 = new javax.swing.JLabel();
+        jL_contra = new javax.swing.JLabel();
+        jTF_usuario = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jPF_Password = new javax.swing.JPasswordField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jP_Dentro = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 102));
 
@@ -112,54 +119,6 @@ public class Main extends javax.swing.JFrame {
         jD_MenuLayout.setVerticalGroup(
             jD_MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        jP_Dentro.setBackground(new java.awt.Color(0, 0, 0));
-        jP_Dentro.setForeground(new java.awt.Color(0, 0, 0));
-        jP_Dentro.setPreferredSize(new java.awt.Dimension(760, 470));
-
-        jButton3.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
-        jButton3.setText("Modificar Usuario");
-
-        jButton4.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
-        jButton4.setText("Garage");
-
-        jButton5.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
-        jButton5.setText("Concesionaria");
-        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton5MouseClicked(evt);
-            }
-        });
-
-        jButton6.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
-        jButton6.setText("Comprar Carro");
-
-        javax.swing.GroupLayout jP_DentroLayout = new javax.swing.GroupLayout(jP_Dentro);
-        jP_Dentro.setLayout(jP_DentroLayout);
-        jP_DentroLayout.setHorizontalGroup(
-            jP_DentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jP_DentroLayout.createSequentialGroup()
-                .addGap(254, 254, 254)
-                .addGroup(jP_DentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(280, Short.MAX_VALUE))
-        );
-        jP_DentroLayout.setVerticalGroup(
-            jP_DentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jP_DentroLayout.createSequentialGroup()
-                .addGap(145, 145, 145)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(104, 104, 104))
         );
 
         javax.swing.GroupLayout jP_GarageLayout = new javax.swing.GroupLayout(jP_Garage);
@@ -186,148 +145,45 @@ public class Main extends javax.swing.JFrame {
             .addGap(0, 470, Short.MAX_VALUE)
         );
 
-        jP_IniciarSesion.setBackground(new java.awt.Color(0, 0, 0));
-        jP_IniciarSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/need-for-speed-2560x1440-mclaren.jpg"))); // NOI18N
-        jP_IniciarSesion.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jP_CrearUsuario.setBackground(new java.awt.Color(0, 0, 0));
-        jP_CrearUsuario.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jL_contra2.setFont(new java.awt.Font("Roboto", 3, 12)); // NOI18N
-        jL_contra2.setForeground(new java.awt.Color(255, 102, 102));
-        jL_contra2.setText("una minúscula y un carácter especial."); // NOI18N
-        jP_CrearUsuario.add(jL_contra2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 210, -1));
-
-        jL_contra.setFont(new java.awt.Font("Roboto", 3, 12)); // NOI18N
-        jL_contra.setForeground(new java.awt.Color(255, 102, 102));
-        jL_contra.setText("La contraseña debe tener una letra mayúscula,"); // NOI18N
-        jP_CrearUsuario.add(jL_contra, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 280, 250, -1));
-
-        jTF_usuario.setForeground(new java.awt.Color(0, 0, 0));
-        jP_CrearUsuario.add(jTF_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 210, -1));
-
-        jLabel9.setFont(new java.awt.Font("Roboto Medium", 0, 36)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Crea tu cuenta");
-        jP_CrearUsuario.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
-        jP_CrearUsuario.add(jPF_Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, 210, -1));
-
-        jLabel10.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Usuario: ");
-        jP_CrearUsuario.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, -1, -1));
-
-        jLabel11.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Contraseña: ");
-        jP_CrearUsuario.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 250, -1, -1));
-
-        jButton2.setText("Crear");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jP_CrearUsuario.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Ford-Focus-RS-nfs-4k(1).jpg"))); // NOI18N
-        jP_CrearUsuario.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jP_CrearCuenta.setBackground(new java.awt.Color(0, 0, 0));
-        jP_CrearCuenta.setForeground(new java.awt.Color(255, 255, 255));
-        jP_CrearCuenta.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Crear cuenta");
-        jP_CrearCuenta.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Correo: ");
-        jP_CrearCuenta.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Nombre: ");
-        jP_CrearCuenta.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Pais de residencia: ");
-        jP_CrearCuenta.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Fecha de nacimiento:");
-        jP_CrearCuenta.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, -1, -1));
-
-        jTF_nombre.setForeground(new java.awt.Color(0, 0, 0));
-        jP_CrearCuenta.add(jTF_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 206, -1));
-
-        jTF_correo.setForeground(new java.awt.Color(0, 0, 0));
-        jP_CrearCuenta.add(jTF_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 206, -1));
-
-        jTF_pais.setForeground(new java.awt.Color(0, 0, 0));
-        jP_CrearCuenta.add(jTF_pais, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, 206, -1));
-
-        jd_fecha.setForeground(new java.awt.Color(255, 255, 255));
-        jP_CrearCuenta.add(jd_fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 206, -1));
-
-        jButton1.setText("Crear Cuenta");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jP_CrearCuenta.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, -1, -1));
-
-        jL_edad.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jL_edad.setForeground(new java.awt.Color(255, 153, 153));
-        jL_edad.setText("La edad debe ser mayor de 12.");
-        jP_CrearCuenta.add(jL_edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/652823(1).png"))); // NOI18N
-        jP_CrearCuenta.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, -1));
-
-        jP_Inicio.setBackground(new java.awt.Color(0, 0, 0));
-        jP_Inicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jB_crear.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
-        jB_crear.setText("Crear una cuenta");
-        jB_crear.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jB_crearMouseClicked(evt);
-            }
-        });
-        jP_Inicio.add(jB_crear, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 220, 30));
-
-        jB_login.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
-        jB_login.setText("Iniciar sesion");
-        jB_login.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jB_loginMouseClicked(evt);
-            }
-        });
-        jP_Inicio.add(jB_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 220, 30));
-
-        jL_Iniciar.setFont(new java.awt.Font("Five Nights at Freddy's", 1, 40)); // NOI18N
-        jL_Iniciar.setForeground(new java.awt.Color(255, 255, 255));
-        jL_Iniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/650294(1).jpg"))); // NOI18N
-        jP_Inicio.add(jL_Iniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, -1));
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
             }
         });
+
+        jP_IniciarSesion.setBackground(new java.awt.Color(0, 0, 0));
+        jP_IniciarSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel14.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("Usuario");
+        jP_IniciarSesion.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("Contrasena");
+        jP_IniciarSesion.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, -1, -1));
+
+        jPF_PasswordInicio.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jPF_PasswordInicio.setForeground(new java.awt.Color(0, 0, 0));
+        jP_IniciarSesion.add(jPF_PasswordInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 210, -1));
+
+        jTF_usuarioInicio.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jTF_usuarioInicio.setForeground(new java.awt.Color(0, 0, 0));
+        jP_IniciarSesion.add(jTF_usuarioInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 270, 210, -1));
+
+        jButton7.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 24)); // NOI18N
+        jButton7.setText("Entrar");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
+        jP_IniciarSesion.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 380, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/need-for-speed-2560x1440-mclaren.jpg"))); // NOI18N
+        jP_IniciarSesion.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jP_Concesionaria.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -408,6 +264,184 @@ public class Main extends javax.swing.JFrame {
                 .addGap(64, 64, 64))
         );
 
+        jP_Inicio.setBackground(new java.awt.Color(0, 0, 0));
+        jP_Inicio.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jB_crear.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jB_crear.setText("Crear una cuenta");
+        jB_crear.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jB_crearMouseClicked(evt);
+            }
+        });
+        jP_Inicio.add(jB_crear, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, 220, 30));
+
+        jB_login.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jB_login.setText("Iniciar sesion");
+        jB_login.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jB_loginMouseClicked(evt);
+            }
+        });
+        jP_Inicio.add(jB_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, 220, 30));
+
+        jL_Iniciar.setFont(new java.awt.Font("Five Nights at Freddy's", 1, 40)); // NOI18N
+        jL_Iniciar.setForeground(new java.awt.Color(255, 255, 255));
+        jL_Iniciar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/650294(1).jpg"))); // NOI18N
+        jP_Inicio.add(jL_Iniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, -1));
+
+        jP_CrearCuenta.setBackground(new java.awt.Color(0, 0, 0));
+        jP_CrearCuenta.setForeground(new java.awt.Color(255, 255, 255));
+        jP_CrearCuenta.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Roboto Medium", 0, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Crear cuenta");
+        jP_CrearCuenta.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 100, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Correo: ");
+        jP_CrearCuenta.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Nombre: ");
+        jP_CrearCuenta.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Pais de residencia: ");
+        jP_CrearCuenta.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Fecha de nacimiento:");
+        jP_CrearCuenta.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, -1, -1));
+
+        jTF_nombre.setForeground(new java.awt.Color(0, 0, 0));
+        jP_CrearCuenta.add(jTF_nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, 206, -1));
+
+        jTF_correo.setForeground(new java.awt.Color(0, 0, 0));
+        jP_CrearCuenta.add(jTF_correo, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 210, 206, -1));
+
+        jTF_pais.setForeground(new java.awt.Color(0, 0, 0));
+        jP_CrearCuenta.add(jTF_pais, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 250, 206, -1));
+
+        jd_fecha.setForeground(new java.awt.Color(255, 255, 255));
+        jP_CrearCuenta.add(jd_fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 206, -1));
+
+        jButton1.setText("Crear Cuenta");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jP_CrearCuenta.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, -1, -1));
+
+        jL_edad.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jL_edad.setForeground(new java.awt.Color(255, 153, 153));
+        jL_edad.setText("La edad debe ser mayor de 12.");
+        jP_CrearCuenta.add(jL_edad, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/652823(1).png"))); // NOI18N
+        jP_CrearCuenta.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, -1));
+
+        jP_CrearUsuario.setBackground(new java.awt.Color(0, 0, 0));
+        jP_CrearUsuario.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jL_contra2.setFont(new java.awt.Font("Roboto", 3, 12)); // NOI18N
+        jL_contra2.setForeground(new java.awt.Color(255, 102, 102));
+        jL_contra2.setText("una minúscula y un carácter especial."); // NOI18N
+        jP_CrearUsuario.add(jL_contra2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 290, 210, -1));
+
+        jL_contra.setFont(new java.awt.Font("Roboto", 3, 12)); // NOI18N
+        jL_contra.setForeground(new java.awt.Color(255, 102, 102));
+        jL_contra.setText("La contraseña debe tener una letra mayúscula,"); // NOI18N
+        jP_CrearUsuario.add(jL_contra, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 280, 250, -1));
+
+        jTF_usuario.setForeground(new java.awt.Color(0, 0, 0));
+        jP_CrearUsuario.add(jTF_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 210, -1));
+
+        jLabel9.setFont(new java.awt.Font("Roboto Medium", 0, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Crea tu cuenta");
+        jP_CrearUsuario.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, -1, -1));
+        jP_CrearUsuario.add(jPF_Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, 210, -1));
+
+        jLabel10.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Usuario: ");
+        jP_CrearUsuario.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("Contraseña: ");
+        jP_CrearUsuario.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 250, -1, -1));
+
+        jButton2.setText("Crear");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jP_CrearUsuario.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Ford-Focus-RS-nfs-4k(1).jpg"))); // NOI18N
+        jP_CrearUsuario.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jP_Dentro.setBackground(new java.awt.Color(0, 0, 0));
+        jP_Dentro.setForeground(new java.awt.Color(0, 0, 0));
+        jP_Dentro.setPreferredSize(new java.awt.Dimension(760, 470));
+
+        jButton3.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jButton3.setText("Modificar Usuario");
+
+        jButton4.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jButton4.setText("Garage");
+
+        jButton5.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jButton5.setText("Concesionaria");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
+
+        jButton6.setFont(new java.awt.Font("Five Nights at Freddy's", 0, 36)); // NOI18N
+        jButton6.setText("Comprar Carro");
+
+        javax.swing.GroupLayout jP_DentroLayout = new javax.swing.GroupLayout(jP_Dentro);
+        jP_Dentro.setLayout(jP_DentroLayout);
+        jP_DentroLayout.setHorizontalGroup(
+            jP_DentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jP_DentroLayout.createSequentialGroup()
+                .addGap(254, 254, 254)
+                .addGroup(jP_DentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(280, Short.MAX_VALUE))
+        );
+        jP_DentroLayout.setVerticalGroup(
+            jP_DentroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jP_DentroLayout.createSequentialGroup()
+                .addGap(145, 145, 145)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(104, 104, 104))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -418,6 +452,31 @@ public class Main extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jP_Concesionaria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_Inicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_CrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_CrearUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_IniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_Dentro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -426,6 +485,31 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jP_Concesionaria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_Inicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_CrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_CrearUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_IniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jP_Dentro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
@@ -457,6 +541,8 @@ public class Main extends javax.swing.JFrame {
             jP_IniciarSesion.setVisible(false);
             jL_contra.setVisible(false);
             jL_contra2.setVisible(false);
+            jP_Dentro.setVisible(false);
+            jP_Concesionaria.setVisible(false);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -489,6 +575,8 @@ public class Main extends javax.swing.JFrame {
             jP_CrearCuenta.setVisible(false);
             jP_CrearUsuario.setVisible(false);
             jP_IniciarSesion.setVisible(false);
+            jP_Dentro.setVisible(false);
+            jP_Concesionaria.setVisible(false);
         }
         
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -502,6 +590,8 @@ public class Main extends javax.swing.JFrame {
         jP_CrearCuenta.setVisible(true);
         jB_login.setVisible(false);
         jB_crear.setVisible(false);
+        jP_Dentro.setVisible(false);
+        jP_Concesionaria.setVisible(false);
     }//GEN-LAST:event_jB_crearMouseClicked
 
     private void jB_loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jB_loginMouseClicked
@@ -522,8 +612,9 @@ public class Main extends javax.swing.JFrame {
     private void jCB_Carros_paisItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jCB_Carros_paisItemStateChanged
         // TODO add your handling code here:
         if (evt.getStateChange() == ItemEvent.SELECTED) {
-            Carro car = (Carro) jCB_Carros_pais.getSelectedItem();
-
+        Carro car = (Carro) jCB_Carros_pais.getSelectedItem();
+        String paisSeleccionado = (String) jCB_Carros_pais.getSelectedItem();
+        if (car != null && car.getPais().equals(paisSeleccionado)) {
             Object[] newrow = {
                 car.getMarca(),
                 car.getModelo(),
@@ -535,7 +626,36 @@ public class Main extends javax.swing.JFrame {
             modelo.addRow(newrow);
             jTable1.setModel(modelo);
         }
+    }
     }//GEN-LAST:event_jCB_Carros_paisItemStateChanged
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        // TODO add your handling code here:
+        if (jTF_usuarioInicio.getText().isEmpty() || jPF_PasswordInicio.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Llene las casillas.");  
+        }else{
+            boolean siesta=false;
+            for (Usuario usuario : usuarios) {
+                if (usuario.getUsuario().equals(jTF_usuarioInicio.getText()) && usuario.getPassword().equals(jPF_PasswordInicio.getText())) {
+                   JOptionPane.showMessageDialog(this, "Bienvenido!!");
+                   siesta=true;
+                   break;
+                }
+            }
+            if (siesta) {
+                jL_Iniciar.setVisible(false);
+                jP_IniciarSesion.setVisible(false);
+                jP_CrearUsuario.setVisible(false);
+                jP_CrearCuenta.setVisible(false);
+                jB_login.setVisible(false);
+                jB_crear.setVisible(false);
+                jP_Concesionaria.setVisible(false);
+                jP_Dentro.setVisible(true);
+            } else {
+                JOptionPane.showMessageDialog(this, "Usuario o contraseña incorrectos.");
+            }
+        }
+    }//GEN-LAST:event_jButton7MouseClicked
 
     /**
      * @param args the command line arguments
@@ -612,6 +732,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JComboBox<String> jCB_Carros_pais;
     private javax.swing.JDialog jD_Menu;
     private javax.swing.JLabel jL_Iniciar;
@@ -623,6 +744,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -632,6 +755,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPasswordField jPF_Password;
+    private javax.swing.JPasswordField jPF_PasswordInicio;
     private javax.swing.JPanel jP_Concesionaria;
     private javax.swing.JPanel jP_CrearCuenta;
     private javax.swing.JPanel jP_CrearUsuario;
@@ -646,6 +770,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField jTF_nombre;
     private javax.swing.JTextField jTF_pais;
     private javax.swing.JTextField jTF_usuario;
+    private javax.swing.JTextField jTF_usuarioInicio;
     private javax.swing.JTable jTable1;
     private com.toedter.calendar.JDateChooser jd_fecha;
     // End of variables declaration//GEN-END:variables
