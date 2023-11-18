@@ -291,7 +291,6 @@ public class Main extends javax.swing.JFrame {
             
         }else if (!edadvalida(jd_fecha.getDate())) {
             jL_edad.setVisible(true);
-            JOptionPane.showMessageDialog(this, "Usuario no creado.");
         } else {
             usuarios.add(new Usuario(jTF_nombre.getText(),
                                     jTF_correo.getText(),
@@ -303,7 +302,6 @@ public class Main extends javax.swing.JFrame {
             jTF_pais.setText("");
             jd_fecha.setDate(new Date());
             jL_edad.setVisible(false);
-            JOptionPane.showMessageDialog(this, "Usuario creado existosamente");
             
             jP_CrearCuenta.setVisible(false);
             jP_CrearUsuario.setVisible(true);
@@ -334,10 +332,20 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        if (jTF_usuario.getText()==""|| jPF_Password.getText()=="") {
+        if (jTF_usuario.getText().isEmpty() || jPF_Password.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Llene las casillas.");
+        }else if (!validarContra(jPF_Password.getText())) {
+            jL_contra.setVisible(true);
+            jL_contra2.setVisible(true); 
+            jTF_usuario.setText("");
+            jPF_Password.setText("");
         }else{
-            
+            usuarios.add(new Usuario(jTF_nombre.getText(),
+                                    jTF_correo.getText(),
+                                    jTF_pais.getText(),jTF_usuario.getText(),jPF_Password.getText(),150000,
+                                    jd_fecha.getDate())
+            );
+            JOptionPane.showMessageDialog(this, "Usuario creado existosamente");
             jL_Iniciar.setVisible(true);
             jP_CrearCuenta.setVisible(false);
             jP_CrearUsuario.setVisible(false);
@@ -387,6 +395,24 @@ public class Main extends javax.swing.JFrame {
         return edadActual >= 12;
     }
     
+    private boolean validarContra(String password) {
+        boolean mayus = false, 
+                minus = false, 
+                caracterEspecial = false;
+
+        for (char caracter : password.toCharArray()) {
+            if (Character.isUpperCase(caracter)) {
+                mayus = true;
+            } else if (Character.isLowerCase(caracter)) {
+                minus = true;
+            } else if (!Character.isLetterOrDigit(caracter)) {
+                caracterEspecial = true;
+            }
+        }
+
+        return mayus && minus && caracterEspecial;
+    }
+
     
     private ArrayList<Usuario> usuarios= new ArrayList();
     
